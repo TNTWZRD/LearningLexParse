@@ -13,11 +13,14 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
-    <Filter Include="Source Files\src">
-      <UniqueIdentifier>{86b181d2-667c-40c4-ad99-f045bbddb70c}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Source Files\Input">
       <UniqueIdentifier>{bbd7fea7-6290-4813-8e83-a4b1315185d5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\logs">
+      <UniqueIdentifier>{6133c6b9-c985-431b-b285-d6bd5608eb83}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\src">
+      <UniqueIdentifier>{a2c61fcf-9e53-4425-bdc6-97a334cfd1dd}</UniqueIdentifier>
     </Filter>
     <Filter Include="Source Files\src\utils">
       <UniqueIdentifier>{25233446-6348-4ff6-91a7-dd201f572194}</UniqueIdentifier>
@@ -29,22 +32,20 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="main.jrvs">
-      <Filter>Source Files\Input</Filter>
-    </None>
+    <ClInclude Include="src\print.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\utils\fileManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\utils\logManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\utils\smallUtils.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="fileManager.h">
-      <Filter>Source Files\src\utils</Filter>
-    </ClInclude>
-    <ClInclude Include="smallUtils.h">
-      <Filter>Source Files\src\utils</Filter>
-    </ClInclude>
-    <ClInclude Include="logManager.h">
-      <Filter>Source Files\src\utils</Filter>
-    </ClInclude>
-    <ClInclude Include="print.h">
-      <Filter>Source Files\src</Filter>
-    </ClInclude>
+    <None Include="input\main.jrvs" />
   </ItemGroup>
 </Project>

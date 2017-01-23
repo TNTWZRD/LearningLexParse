@@ -113,13 +113,13 @@
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="main.jrvs" />
+    <ClInclude Include="src\print.h" />
+    <ClInclude Include="src\utils\fileManager.h" />
+    <ClInclude Include="src\utils\logManager.h" />
+    <ClInclude Include="src\utils\smallUtils.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="fileManager.h" />
-    <ClInclude Include="logManager.h" />
-    <ClInclude Include="print.h" />
-    <ClInclude Include="smallUtils.h" />
+    <None Include="input\main.jrvs" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
