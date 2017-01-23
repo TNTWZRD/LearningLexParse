@@ -18,6 +18,9 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\main.cpp" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{3101533D-4137-4427-8B3E-2AA606DF2D04}</ProjectGuid>
     <RootNamespace>JRVS</RootNamespace>
