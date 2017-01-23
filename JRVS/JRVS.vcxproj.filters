@@ -13,55 +13,5 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
-    <Filter Include="Source Files\Input">
-      <UniqueIdentifier>{bbd7fea7-6290-4813-8e83-a4b1315185d5}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\logs">
-      <UniqueIdentifier>{6133c6b9-c985-431b-b285-d6bd5608eb83}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\src">
-      <UniqueIdentifier>{a2c61fcf-9e53-4425-bdc6-97a334cfd1dd}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\src\utils">
-      <UniqueIdentifier>{25233446-6348-4ff6-91a7-dd201f572194}</UniqueIdentifier>
-    </Filter>
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="main.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="src\parse.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="src\jrvs.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="src\utils\fileManager.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\utils\logManager.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\utils\smallUtils.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\parse.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="main.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\jrvs.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="input\main.jrvs" />
-    <None Include="logs\2017-01-23T01-15-07Z.out" />
-  </ItemGroup>
-  <ItemGroup>
-    <Text Include="logs\2017-01-23T01-15-07Z.log" />
   </ItemGroup>
 </Project>
