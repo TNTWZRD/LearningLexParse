@@ -56,7 +56,7 @@ namespace logger {
 
 	public:
 		// Singleton Code
-		static LogManager& LogManager::get(AllLogs allLogs) {
+		static LogManager& LogManager::get(AllLogs allLogs = AllLogs::AllOn) {
 			if (allLogs == AllLogs::AllOn)
 				return get(DefualtLogs::DefualtOn, CustomLogs::CustomOn);
 			else
