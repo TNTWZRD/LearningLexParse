@@ -48,4 +48,7 @@
   <ItemGroup>
     <None Include="input\main.jrvs" />
   </ItemGroup>
+  <ItemGroup>
+    <Text Include="logs\1-22-2017__23-41.log" />
+  </ItemGroup>
 </Project>
