@@ -30,11 +30,14 @@
     <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="src\parse.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\jrvs.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="src\print.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="src\utils\fileManager.h">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -44,11 +47,21 @@
     <ClInclude Include="src\utils\smallUtils.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="src\parse.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="main.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\jrvs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="input\main.jrvs" />
+    <None Include="logs\2017-01-23T01-15-07Z.out" />
   </ItemGroup>
   <ItemGroup>
-    <Text Include="logs\1-22-2017__23-41.log" />
+    <Text Include="logs\2017-01-23T01-15-07Z.log" />
   </ItemGroup>
 </Project>
