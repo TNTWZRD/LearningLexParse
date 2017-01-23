@@ -21,6 +21,11 @@
   <ItemGroup>
     <ClCompile Include="main.cpp" />
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\utils\fileManager.h" />
+    <ClInclude Include="src\utils\logManager.h" />
+    <ClInclude Include="src\utils\smallUtils.h" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{3101533D-4137-4427-8B3E-2AA606DF2D04}</ProjectGuid>
     <RootNamespace>JRVS</RootNamespace>
