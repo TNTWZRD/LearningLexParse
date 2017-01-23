@@ -112,6 +112,15 @@
   <ItemGroup>
     <ClCompile Include="main.cpp" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="main.jrvs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="fileManager.h" />
+    <ClInclude Include="logManager.h" />
+    <ClInclude Include="print.h" />
+    <ClInclude Include="smallUtils.h" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
