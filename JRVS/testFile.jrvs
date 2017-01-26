@@ -1,4 +1,2 @@
-PRINT "Hello World"
-PRINT "Im Working!!"
-
-PRINT 10+2
+INPUT "Enter Your Name: " $name
+PRINT $name
