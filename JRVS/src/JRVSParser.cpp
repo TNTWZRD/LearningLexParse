@@ -51,12 +51,23 @@ void JRVSParser::lex(string data) {
 			isexpr = 0;
 		}
 		else if (token == "=" && !quote) {
+			if (expr != "" && isexpr == 0) {
+				tokens.push_back("NUM:" + expr);
+				expr = "";
+			}
+
 			if (var != "") {
 				tokens.push_back("VAR:" + var);
 				var = "";
 				varStarted = 0;
 			}
-			tokens.push_back("EQUALS");
+
+			if (tokens.back() == "EQUALS") {
+				tokens.back() = "EQEQ";
+			}
+			else {
+				tokens.push_back("EQUALS");
+			}
 			token = "";
 		}
 		else if (token == "$" && !quote) {
@@ -76,6 +87,22 @@ void JRVSParser::lex(string data) {
 			tokens.push_back("PRINT");
 			token = "";
 		}
+		else if (token == "ENDIF" || token == "endif") {
+			tokens.push_back("ENDIF");
+			token = "";
+		}
+		else if (token == "IF" || token == "if") {
+			tokens.push_back("IF");
+			token = "";
+		}
+		else if (token == "THEN" || token == "then") {
+			if (expr != "" && isexpr == 0) {
+				tokens.push_back("NUM:" + expr);
+				expr = "";
+			}
+			tokens.push_back("THEN");
+			token = "";
+		}
 		else if (token == "0" || token == "1" || token == "2" || token == "3" || token == "4" || token == "5" || token == "6" || token == "7" || token == "8" || token == "9") {
 			expr += token;
 			token = "";
@@ -83,6 +110,9 @@ void JRVSParser::lex(string data) {
 		else if (token == "+" || token == "-" || token == "*" || token == "/" || token == "^" || token == "%") {
 			isexpr = 1;
 			expr += token;
+			token = "";
+		}
+		else if (token == "\t") {
 			token = "";
 		}
 		else if (token == "\"" || token == " \"") {
@@ -107,7 +137,11 @@ void JRVSParser::parse(vector<string> tokens) {
 	int i = 0;
 	string str;
 	while (i < tokens.size()) {
-		if (tokens[i] + " " + tokens[i + 1].substr(0, 6) == "PRINT STRING") {
+		if (tokens[i] == "ENDIF") {
+			_Output("ENDIF");
+			i += 1;
+		}
+		else if (tokens[i] + " " + tokens[i + 1].substr(0, 6) == "PRINT STRING") {
 			doPrint(tokens[i + 1]);
 			i += 2;
 		}
@@ -146,10 +180,18 @@ void JRVSParser::parse(vector<string> tokens) {
 			symbols[tokens[i + 2].substr(4)] = "STRING:\"" + in + "\"";
 			i += 3;
 		}
-
+		else if (tokens[i] + " " + tokens[i + 1].substr(0, 3) + " " + tokens[i + 2] + " " + tokens[i + 3].substr(0, 3) + " " + tokens[i + 4] == "IF NUM EQEQ NUM THEN") {
+			if (tokens[i+1].substr(4) == tokens[i + 3].substr(4)) {
+				_Output("IF TRUE THEN");
+			}
+			else {
+				_Output("IF FALSE THEN");
+			}
+			i += 5;
+		}
 	}
 
-#if 1
+#if 0
 	std::cout << "[";
 	for (int i = 0; i < symbols.Size(); i++) {
 		std::cout << " \"" << symbols.GetItemName(i) << "\"," << " \"" << symbols[i] << "\",";

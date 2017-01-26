@@ -1,2 +1,24 @@
-INPUT "Enter Your Name: " $name
-PRINT $name
+PRINT "Hello"
+PRINT 10*50
+PRINT 2017
+
+$hello = "HELLO"
+$500 = 10*50
+$2017 = 2017
+
+PRINT $hello
+PRINT $500
+PRINT $2017
+
+$var1 = "UNIQUE"
+$var2 = $var1
+
+PRINT $var2
+
+INPUT "Please Enter Your Name: " $NAME
+PRINT "Your Name Is"
+PRINT $NAME
+
+if 1 == 1 then
+	print "Hello World"
+endif

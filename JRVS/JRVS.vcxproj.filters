@@ -44,5 +44,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="testFile.jrvs" />
+    <None Include="logs\2017-01-26T16-30-26Z.out" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="logs\2017-01-26T16-30-26Z.log" />
   </ItemGroup>
 </Project>

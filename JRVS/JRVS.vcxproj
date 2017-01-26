@@ -31,7 +31,11 @@
     <ClInclude Include="src\utils\tinyexpr.h" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="logs\2017-01-26T16-30-26Z.out" />
     <None Include="testFile.jrvs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="logs\2017-01-26T16-30-26Z.log" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{3101533D-4137-4427-8B3E-2AA606DF2D04}</ProjectGuid>

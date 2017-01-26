@@ -26,7 +26,7 @@ private:
 	string OutFile = "logs/" + smallutils::replaceInString(smallutils::getISOTimeStamp(), ':', '-') + ".out";
 
 	void _QuickLog(string out) { Log.LOGDEBUG(string("JRVSParser: " + string(out))); }
-	void _Output(string out) { std::cout << ">>> " << out << std::endl; FMan.appendFile(OutFile, out); }
+	void _Output(string out) { Log.LOGDEBUG(string("OUTPUT: " + string(out))); FMan.appendFile(OutFile, out); }
 
 	string FILE;
 	string INPUTFILE;
