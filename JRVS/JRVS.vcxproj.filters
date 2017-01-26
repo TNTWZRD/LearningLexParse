@@ -21,6 +21,9 @@
     <ClCompile Include="src\JRVSParser.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="src\utils\tinyexpr.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\utils\fileManager.h">
@@ -35,12 +38,11 @@
     <ClInclude Include="src\JRVSParser.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="src\utils\tinyexpr.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="testFile.jrvs" />
-    <None Include="logs\2017-01-23T18-25-03Z.out" />
-  </ItemGroup>
-  <ItemGroup>
-    <Text Include="logs\2017-01-23T18-25-03Z.log" />
   </ItemGroup>
 </Project>

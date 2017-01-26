@@ -21,19 +21,17 @@
   <ItemGroup>
     <ClCompile Include="src\JRVSParser.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="src\utils\tinyexpr.c" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\JRVSParser.h" />
     <ClInclude Include="src\utils\fileManager.h" />
     <ClInclude Include="src\utils\logManager.h" />
     <ClInclude Include="src\utils\smallUtils.h" />
+    <ClInclude Include="src\utils\tinyexpr.h" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="logs\2017-01-23T18-25-03Z.out" />
     <None Include="testFile.jrvs" />
-  </ItemGroup>
-  <ItemGroup>
-    <Text Include="logs\2017-01-23T18-25-03Z.log" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{3101533D-4137-4427-8B3E-2AA606DF2D04}</ProjectGuid>

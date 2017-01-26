@@ -1,2 +1,4 @@
 PRINT "Hello World"
 PRINT "Im Working!!"
+
+PRINT 10+2

@@ -3,10 +3,12 @@
 #include <string>
 #include <vector>
 #include <sstream>
+#include <algorithm>
 
 #include "utils\logManager.h"
 #include "utils\fileManager.h"
 #include "utils\smallUtils.h"
+#include "utils\tinyexpr.h"
 
 using namespace std;
 
@@ -28,5 +30,7 @@ private:
 
 	void lex(string data);
 	void parse(vector<string> tokens);
+	void doPrint(string toPrint);
+	string evalExpr(string expr);
 };
 
